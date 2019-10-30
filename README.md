@@ -1,5 +1,2 @@
-# neural-entrainment
-
-code for experiment 1 ('Neural entrainment to acoustic edges in speech')
-
-includes power, phase coherence and power covariance, bit messy. needs to be organised. 
+The folder 'code for experiment 1' is no longer valid. 
+The raw data for the analyses can be found online at https://osf.io/v78dm/.
