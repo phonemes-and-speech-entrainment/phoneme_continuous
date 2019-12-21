@@ -1,9 +1,14 @@
+%compare itc to stimuli with baseline power; this is averaged over delta (1-4 Hz), theta (4-8 Hz) and alpha (8-12 Hz) ranges
+
+
 clearvars;
 addpath('/Users/gigel/Documents/Speech EEG/Experiment 3 (final)');
 
 
 load('itc_for_baseline_diff.mat');
 load('itc_for_baseline_diff2.mat');
+
+%use T-tests as stats
 
 [~,p1,~,stats1]=ttest(mean_delta,mean_delta2)
 
@@ -23,6 +28,7 @@ error_delta=[error_delta1,error_delta2];
 fig=figure('Renderer', 'painters', 'Position', [10 10 1200 300]);
 
 subplot(1,3,1);
+%plot trial delta to baseline delta
 b1 = bar(bar_delta,'FaceColor','flat');
 b1.FaceColor = 'flat';
 b1.CData(1,:) = [0.50,0.68,0.74];
@@ -54,6 +60,7 @@ error_theta2=std(mean_theta2)./sqrt(n);
 error_theta=[error_theta1,error_theta2];
 
 subplot(1,3,2);
+%plot trial theta to baseline theta
 b2 = bar(bar_theta,'FaceColor','flat');
 b2.FaceColor = 'flat';
 b2.CData(1,:) = [0.50,0.68,0.74];
@@ -86,6 +93,7 @@ error_alpha2=std(mean_alpha2)./sqrt(n);
 error_alpha=[error_alpha1,error_alpha2];
 
 subplot(1,3,3);
+%plot trial alpha to baseline alpha
 b3 = bar(bar_alpha,'FaceColor','flat');
 b3.FaceColor = 'flat';
 b3.CData(1,:) = [0.50,0.68,0.74];
