@@ -1,3 +1,7 @@
+%uses function 'eeg_sound_coh' to calculate coherence between EEG trials and random sounds
+%first .mat variable contains randomised EEG spectrograms
+%second .mat variable contains sound spectrograms
+
 clearvars;
 
 load('Spectrograms_rand_without_500ms.mat');
