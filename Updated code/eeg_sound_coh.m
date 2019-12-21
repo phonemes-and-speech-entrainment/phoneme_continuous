@@ -1,3 +1,6 @@
+%calculates cerebro-acoustic coherence, between spectrogram of the EEG trial and that of the sound 
+
+
 function C_power=eeg_sound_coh(eegspects,soundspects)
 C_power = zeros(size(eegspects,1),size(eegspects,2),size(eegspects,3),size(eegspects,4),size(eegspects,5));
 
@@ -9,7 +12,7 @@ for i=1:size(C_power,1)
                 phase=angle(eegpow.*conj(soundspects));
                 cosine=cos(phase);
                 sine=sin(phase);
-                temp=mean(cosine,3).^2+mean(sine,3).^2;  
+                temp=mean(cosine,3).^2+mean(sine,3).^2;  %phase coherence normalised over time
                 C_power(i,j,:,l,:)=reshape(temp,1,1,size(eegspects,3),1,size(eegspects,5));
          end
     end
