@@ -1,3 +1,5 @@
+%plots the phase coherence difference between actual and random trials 
+%plots are averaged across subjects and channels but show separate conditions (English - strong/weak; Russian - strong/weak)
 clearvars;
 
 load('ITPC_without_500ms.mat');
