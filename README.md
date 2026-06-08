@@ -7,4 +7,3 @@ In the early code (branch: experiment-1---natural-edges), we kept entire EEG fil
 
 The code and theory content were checked by Conor Houghton, Nina Kazanina (including through explicit PowerPoint presentations held twice a week in my final year), and by the International Laboratory of Social Neurobiology, HSE University, Moscow, Russia, for reasons unknown except for a vague correlation with the annual St. Petersburg International Economics Forum, which had its first event in June 1997, shortly before the start of the great Russian financial crisis, which is expected to repeat about now.
 
-This will need to be re-analysed by concatenating same-condition data, and by me and not my supervisors. As usual, I've run out of my Matlab free trial. By the way it was Conor's idea to average phase vectors between trials over time, and report them as the same as ITC instead of PLV. We did PLV, but we had very few time windows. 
